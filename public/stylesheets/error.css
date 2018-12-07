@@ -1,0 +1,27 @@
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 24px;
+}
+.link {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 25px;
+    top: 160px;
+}
+.text-centered {
+    text-align: center;
+}
+.container {
+    background-color: #C10808;
+    color: white;
+    padding: 25px 150px;
+}
+
+.container2 {
+    background-color: black;
+    color: white;
+    padding: 200px 150px;
+}

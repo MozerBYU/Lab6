@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>User Login and Sessions</title>
+    <title>User Login</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/login.css" />
 </head>
 
@@ -17,9 +17,9 @@
     <div class="modal-content">
         <form method="POST" action="/login">
             <label class="text2 text-centered">Username:</label>
-            <input type="text" id="username" name="username"><br>
+            <input type="text" id="username" name="username" required><br>
             <label class="text2 text-centered">Password:</label>
-            <input type="password" id="password" name="password"><br>
+            <input type="password" id="password" name="password" required><br>
             <button class="text-centered text" type="submit" id="login" value="Login">Login</button><label>
         </form>
         <div class="message-content">

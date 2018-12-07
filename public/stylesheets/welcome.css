@@ -1,0 +1,34 @@
+#welcomeText {
+    font-size: 20px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+#logoutLink {
+    font-size: 20px;
+    position: absolute;
+    right: 25px;
+    top: 50px;
+}
+#editLink {
+    font-size: 20px;
+    position: absolute;
+    right: 25px;
+    top: 75px;
+}
+
+.container {
+    background-color: #051E51;
+    padding: 25px 150px;
+}
+
+.whiteText {
+    color: white;
+}
+.text-centered {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}

@@ -2,28 +2,34 @@
 <html ng-app="myApp">
 
 <head>
-    <title>User Login and Sessions</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <title>User Homepage</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/welcome.css" />
 </head>
 
 <body>
     <div ng-controller="myController">
-        <h2 id="welcomeText">Welcome. You are Logged In as
-            <%= username %>
-        </h2>
-        <a id="logoutLink" href="/logout">logout</a>
-        <a id="editLink" href="/user">Edit User</a>
-        <p>Place Your Code Here
-            <p>
+        <div class="container text-centered whiteText">
+            <h1>Welcome!</h1>
+            <h2 class="whiteText" id="welcomeText">
+                Current User:
+                <%= username %>
+            </h2>
+            <a class="whiteText" id="logoutLink" href="/logout">logout</a>
+            <a class="whiteText" id="editLink" href="/user">Edit User</a>
+        </div>
+
+        <h2><%= username %>, welcome to your own server.<h2>
+            
+        <p>Development is underway of a personal server running your own personal
+        OneDrive and Youtube right from this very webpage. Secured, protected and authenticated against hackers and viruses!</p>
     </div>
     <hr>
-    <span id="indexMsg">
+    <span class="text-centered" id="indexMsg">
         <%= msg %>
     </span>
     <hr>
-    <span id="colorText">
-    Color
-        <%= color %>
+    <span class="text-centered" id="colorText">
+    User's Favorite Color: <%= color %>
       </span>
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>

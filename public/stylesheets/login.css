@@ -80,7 +80,7 @@ button:hover {
     padding: 10px 316px;
 }
 
-#signUpLink {
+#signUpLink, #homeLink {
     position: absolute;
     right: 25px;
     top: 0;

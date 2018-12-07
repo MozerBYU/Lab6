@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <title>User Login and Sessions</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/login.css" />
 </head>
-        
-<body>  
-    <div class="form-container">
-        <p class="form-header">Login</p>
-        <form method="POST" action="/login">
-            <label>Username:</label>
-            <input type="text" id="username" name="username"><br>
-            <label>Password:</label>
-            <input type="password" id="password" name="password"><br>
-            <input type="submit" id="login" value="Login">
-        </form>
+
+<body>
+    <div class="container1">
+        <h1 class="text-centered">Login</h1>
     </div>
-    <a id="signUpLink" href="/signup">Sign Up</a>
+    <div class="imgcontainer">
+        <a id="signUpLink" href="/signup">Sign Up</a>
+        <img class="imgsize" src="./images/avatar.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="modal-content">
+        <form method="POST" action="/login">
+            <label class="text2 text-centered">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <label class="text2 text-centered">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <button class="text-centered text" type="submit" id="login" value="Login">Login</button><label>
+        </form>
+        <div class="message-content">
+            <span class="text-centered" id="loginMsg"><%= msg %></span>
+        </div>
+    </div>
     <hr>
-    <span id="loginMsg">
-    <%= msg %>
-    </span>
 </body>
-        
+
 </html>
